@@ -15,6 +15,44 @@
                  HorizontalTextAlignment="Center"
 
                 />
+        <Grid BackgroundColor="White">
+             <Grid.RowDefinitions>
+
+                 <RowDefinition
+                     Height="20" />
+                 <RowDefinition Height="20" />
+
+             </Grid.RowDefinitions>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="2*" />
+                 <ColumnDefinition Width="2*"/>
+                 <ColumnDefinition Width="2*"/>
+             </Grid.ColumnDefinitions>
+            
+             <Label
+                 Text=" Estudiante : "
+                 TextColor="Red"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+
+             <Label
+                 Text="Nombre"
+                 TextColor="Blue"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Entry x:Name="nombreEstudiante" Placeholder="Ingrese Nombre Estudiante" Grid.Row="1" Grid.Column="1"></Entry>
+           
+         </Grid>
+
+
          <Grid BackgroundColor="White">
              <Grid.RowDefinitions>
 

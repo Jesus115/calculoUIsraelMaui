@@ -17,6 +17,18 @@ public partial class IngresoNotas : ContentPage
             return false; // No  falla condición
         }
     }
+    public string ValidarNota(double nota)
+    {
+        switch (nota)
+        {
+            case double n when n >= 7:
+                return "Aprobado";
+            case double n when n >= 5 && n <= 6.9:
+                return "Complementario";
+            default:
+                return "Reprobado";
+        }
+    }
 
     void CalcularNotFinal_Clicked(System.Object sender, System.EventArgs e)
     {
@@ -52,9 +64,11 @@ public partial class IngresoNotas : ContentPage
             notaFinal1.Text = ((notaSeguimiento1*0.3) + (notaExamen1*0.2)).ToString();
             notaFinal2.Text = ((notaSeguimiento2 * 0.3) + (notaExamen2 * 0.2)).ToString();
             double total = ((notaSeguimiento1 * 0.3) + (notaExamen1 * 0.2)) + ((notaSeguimiento2 * 0.3) + (notaExamen2 * 0.2));
+            
+            
             DisplayAlert(
-                "Tu Nota Es",
-                total.ToString(),
+                "Estimado Estudiante "+ nombreEstudiante.Text,
+                "Su Nota Es "+total.ToString()+" Tu Estado es : "+ ValidarNota(total),
                 "OK"
 
                 );
