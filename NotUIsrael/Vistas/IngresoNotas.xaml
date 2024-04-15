@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotUIsrael.Vistas.IngresoNotas"
+             Title="IngresoNotas">
+    
+    <VerticalStackLayout Spacing="25" Padding="30">
+        
+        <Label
+
+                 Margin="5"
+                 Text="Calificacion Movil - Calificacion UISRAEL"
+                 TextColor="Red"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Center"
+
+                />
+         <Grid BackgroundColor="White">
+             <Grid.RowDefinitions>
+
+                 <RowDefinition
+                     Height="20" />
+                 <RowDefinition Height="20" />
+                 <RowDefinition Height="20"/>
+                 <RowDefinition Height="20"/>
+
+             </Grid.RowDefinitions>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="2*" />
+                 <ColumnDefinition Width="2*"/>
+                 <ColumnDefinition Width="2*"/>
+             </Grid.ColumnDefinitions>
+            
+             <Label
+                 Text="Parcial 1"
+                 TextColor="Red"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+
+             <Label
+                 Text="Seguimiento"
+                 TextColor="Blue"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Entry x:Name="notSeguimiento1" Placeholder="Ingrese Nota Seguimiento" Grid.Row="1" Grid.Column="1"></Entry>
+             <Label
+                 Text="Examen"
+                 TextColor="Blue"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Entry x:Name="notExamen1"  Placeholder="Ingrese Nota Examen" Grid.Row="2" Grid.Column="1"></Entry>
+             <Label
+                 Text="Not. Parcial 1"
+                 TextColor="Blue"
+                 Grid.Row="3"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Label
+                 Text="10"
+                 TextColor="Red"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+                 x:Name="notaFinal1"
+
+                />
+         </Grid>
+        <Grid BackgroundColor="White">
+             <Grid.RowDefinitions>
+
+                 <RowDefinition
+                     Height="20" />
+                 <RowDefinition Height="20" />
+                 <RowDefinition Height="20"/>
+                 <RowDefinition Height="20"/>
+
+             </Grid.RowDefinitions>
+             <Grid.ColumnDefinitions>
+                 <ColumnDefinition Width="2*" />
+                 <ColumnDefinition Width="2*"/>
+                 <ColumnDefinition Width="2*"/>
+             </Grid.ColumnDefinitions>
+            
+             <Label
+                 Text="Parcial 2"
+                 TextColor="Red"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+
+             <Label
+                 Text="Seguimiento"
+                 TextColor="Blue"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Entry x:Name="notSeguimiento2"  Placeholder="Ingrese Nota Seguimiento" Grid.Row="1" Grid.Column="1"></Entry>
+             <Label
+                 Text="Examen"
+                 TextColor="Blue"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Entry x:Name="notExamen2"  Placeholder="Ingrese Nota Examen" Grid.Row="2" Grid.Column="1"></Entry>
+             <Label
+                 Text="Not. Parcial 2"
+                 TextColor="Blue"
+                 Grid.Row="3"
+                 Grid.Column="0"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+
+                />
+             <Label
+                 Text="10"
+                 TextColor="Red"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 VerticalTextAlignment="Center"
+                 HorizontalTextAlignment="Start"
+                 x:Name="notaFinal2"
+
+                />
+         </Grid>
+
+        
+        <Button
+            x:Name="CalcularNotFinal"
+            Text="Calcular"
+            Padding="20"
+            Clicked="CalcularNotFinal_Clicked"
+            />
+    </VerticalStackLayout>
+
+</ContentPage>
+
