@@ -6,6 +6,13 @@ public partial class IngresoNotas : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    public IngresoNotas(string usuario)
+    {
+        InitializeComponent();
+        DisplayAlert("Bienvenido","Estimado "+usuario+" Ha Ingresado Correcctamente","Cerrar");
+        idUsuarioIngreso.Text = usuario;
+    }
     public bool ValidarNumero(int numero)
     {
         if (numero < 0 || numero > 10)

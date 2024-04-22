@@ -6,7 +6,7 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new Vistas.IngresoNotas();
+		MainPage = new NavigationPage( new Vistas.vRegistro());
 	}
 }
 

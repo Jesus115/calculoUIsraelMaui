@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NotUIsrael.Vistas.IngresoNotas"
-             Title="IngresoNotas">
+             Title="Ingreso Notas"
+             NavigationPage.HasNavigationBar="True"
+             >
     
     <VerticalStackLayout Spacing="25" Padding="30">
-        
+        <Label Margin="5"  Text="Usuario" TextColor="SkyBlue" x:Name="idUsuarioIngreso" HorizontalTextAlignment="End" FontSize="14"/>
         <Label
 
                  Margin="5"
@@ -193,6 +195,7 @@
             Padding="20"
             Clicked="CalcularNotFinal_Clicked"
             />
+        
     </VerticalStackLayout>
 
 </ContentPage>
